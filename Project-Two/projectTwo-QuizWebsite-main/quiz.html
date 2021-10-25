@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/quiz.css" />
+  </head>
+
+  <body id="z_body" onload="loadCookie()">
+    <nav id="quiz_nav">
+      <div id="z_logo_container"><img src="./assets/logo2.png" alt="logo" id="z_logo"></div>
+     <div><h3 id="cookies"></h3></div>
+      <div><button type="button" onclick="logout()" id="logoutBtn">LogOut</button></div>
+    </nav>
+    <div class="bgimg">
+    <main id="z_container">
+        <div>
+          <div class="flip-box" id="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <p id="front">READ More About This Quiz</p>
+                <br />
+                <h6>Hover Here To Know more</h6>
+              </div>
+              <div class="flip-box-back">
+                <p id="z_quizBrief">
+                  - This test was made for applicants for the position of
+                  "Technical Support Officer". <br />
+                  - The exam consists of: <br />
+                  10 questions of 10 minutes duration.<br />
+                  - Please read the question carefully before answering and you
+                  will get the result at the end of the test.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      <div>
+      <button type="button" onclick="startQuiz()" id="startQuizBtn">Start Quiz Now!</button>
+    </div>
+    
+    <div id="demo"></div>
+  </div>
+
+    </main>
+    <!-- <footer></footer> -->
+    <script src="./js/quiz.js"></script>
+  </body>
+</html>

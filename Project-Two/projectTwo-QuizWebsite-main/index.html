@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="quizer group" />
+    <meta
+      name="description"
+      content="web app that contains quiz, you can login and play!"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript, SEO, Linux, Ubuntu" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="#"><i class="fas fa-chevron-circle-up" id="scroll-up"></i></a>
+      <nav class="navbar">
+        <img
+          src="./assets/logo.png"
+          alt="logo picture with one word"
+          class="logo"
+        />
+        <div class="nav-list hidden">
+          <ul>
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#section--2" class="nav__link">Testimonial</a></li>
+            <li><a href="#footer" class="nav__link">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="social-icons hidden">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/eng_farah92/?r=nametag">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/zsamamah/projectTwo-QuizWebsite">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/farah-habarnih/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="toggle-btn">
+        <i class="fa fa-bars"></i>
+      </div>
+      <section class="intro_section">
+        <div class="intro_section_container">
+          <h1>Welcome to our web app</h1>
+          <h2>Glad to see you here!</h2>
+          <p>
+            Aaron web quiz brings trivia night to your TV! Grab up to 5 of your
+            friends, pick your avatar, then answer the trivia questions as
+            quickly as you can to rise through the rankings and rule your living
+            room.
+          </p>
+          <span>
+            <a href="./register.html" class="btn register">Register</a>
+            <a href="#" class="btn login">login</a>
+          </span>
+        </div>
+
+        <img src="./assets/header-image-section.jpg" alt="quiz image" />
+      </section>
+    </header>
+
+    <main>
+      <section class="form_sections form_hidden" id="form_section">
+        <form class="login_form">
+          <h1>LOGIN</h1>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <p class="msg_error"></p>
+          </div>
+          <div class="form-group">
+            <button type="submit">Sign In</button>
+          </div>
+        </form>
+
+        <div class="intro_section_container">
+          <h1>Welcome to our web app</h1>
+          <h2>Glad to see you here!</h2>
+          <p>
+            Aaron web quiz brings trivia night to your TV! Grab up to 5 of your
+            friends, pick your avatar, then answer the trivia questions as
+            quickly as you can to rise through the rankings and rule your living
+            room.
+          </p>
+        </div>
+      </section>
+
+      <section class="section testimonials-section" id="section--2">
+        <h1>Testimonials</h1>
+        <div class="holder-testimonials">
+          <div class="person">
+            <img
+              src="./assets/client2.png"
+              alt="Cristina Gomez"
+              class="img-person"
+            />
+            <p>
+              Thanks, Guys for your continuing to produce engaging exams, loved
+              Your content strategy!
+            </p>
+            <cite> - Cristina Gomez</cite>
+          </div>
+          <div class="person">
+            <img
+              src="./assets/client1.png"
+              alt="David twinner"
+              class="img-person"
+            />
+            <p>
+              A nice & usefull website, nice design, Would recommend to anyone,
+              keep going guys!
+            </p>
+            <cite> - David twinner</cite>
+          </div>
+          <div class="person">
+            <img
+              src="./assets/customer3.jpg"
+              alt="sara tancredi"
+              class="img-person"
+            />
+            <p>
+              Always available, extremely knowledgeable, and a tremendous
+              "can-do" attitude.
+            </p>
+            <cite> - Sara tancredi</cite>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="social_footer">
+          <h2>let`s get social:</h2>
+          <ul>
+            <a href="https://www.instagram.com/eng_farah92/?r=nametag">
+              <i class="fa fa-instagram"></i
+            ></a>
+            <a href="https://github.com/zsamamah/projectTwo-QuizWebsite">
+              <i class="fa fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/farah-habarnih/">
+              <i class="fa fa-linkedin"></i
+            ></a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col">
+          <p>HTML5</p>
+          <ul>
+            <li>
+              <a href="https://www.w3schools.com/html/default.asp "
+                >HTML Tutorial</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/html/html_examples.asp"
+                >HTML Examples</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/html/html_quiz.asp"
+                >HTML Exams</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <p>CSS</p>
+          <ul>
+            <li>
+              <a href=" https://www.w3schools.com/css/default.asp"
+                >CSS Tutorial</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/css/css_examples.asp"
+                >CSS Examples</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/css/css_quiz.asp">CSS Exams</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <p>JavaScript</p>
+          <ul>
+            <li>
+              <a href="https://www.w3schools.com/js/default.asp">JS Tutorial</a>
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/js/js_exercises.asp"
+                >JS Examples</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/js/js_quiz.asp">JS Exams</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p id="lastp">
+        Copyrigh ©2021 All rights reserved | This Website is made by group 2.
+      </p>
+    </footer>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

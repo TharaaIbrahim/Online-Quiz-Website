@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap,Full Stack Developer,Quiz,Front-End Developer">
+    <meta name="description" content="a quiz game">
+    <meta name="author" content="aron it solution company">
+    <title>register form</title>
+
+
+     <!-- Font awesome cdn -->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+     <link rel="preconnect" href="https://fonts.googleapis.com"/>
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/register.css"/>
+  </head>
+  <body>
+
+    <!-- Header Section -->
+    <header>
+      <a href="#"><i class="fas fa-chevron-circle-up" id="scroll-up"></i></a>
+      <nav class="navbar">
+        <img
+          src="./assets/logo.png"
+          alt="logo picture with one word"
+          class="logo"
+        />
+        <div class="nav-list hidden">
+          <ul>
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#footer" class="nav__link">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="social-icons hidden">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/eng_farah92/?r=nametag">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/zsamamah/projectTwo-QuizWebsite">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/farah-habarnih/">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        <div class="toggle-btn">
+          <i class="fa fa-bars"></i>
+        </div>
+      </header>
+
+    <!-- Main Section -->
+    <main>
+        <div class="row-profile">
+            <form id="form">
+                <div class="col col-1">
+                  <h1>Register</h1>
+                  <br><br><br>
+                  <p>Please fill in this form to create an account.</p>
+                  <hr>
+
+                  <label for="fname">First name:</label>
+                  <input type="text" id="fname" name="fname" placeholder="First Name" required>
+
+                  <label for="lname">Last name:</label>
+                  <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" id="email" required>
+              
+                  <label for="password1"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="password1" size="8" id="password1" oninput="check_function()" required>
+                  <p id="pw1_check" class="err"></p>
+
+                  <label for="password2"><b>Repeat Password</b></label>
+                  <input type="password" placeholder="Repeat Password" name="password2" size="8" id="password2"  oninput="check_function()"required>
+                  <p id="pw2_check" class="err"></p>
+                  <hr>
+                  <p><input type="checkbox" id="Terms" name="Terms" value="checked" required>By creating an account you agree to our Terms & Privacy.</p> 
+                  
+                  <button type="submit" class="registerbtn">Register</button>
+                </div>
+                
+              </form>
+            <div class="col col-2">
+                <div class="profile-img">
+                    <img src="./assets/profile.PNG" alt="">
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+
+
+<!-- Footer Section -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="social_footer">
+      <h2>let`s get social:</h2>
+      <ul>
+        <a href="https://www.instagram.com/eng_farah92/?r=nametag">
+          <i class="fa fa-instagram"></i
+        ></a>
+        <a href="https://github.com/zsamamah/projectTwo-QuizWebsite">
+          <i class="fa fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/farah-habarnih/">
+          <i class="fa fa-linkedin"></i
+        ></a>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="col">
+      <p>HTML5</p>
+      <ul>
+        <li>
+          <a href="https://www.w3schools.com/html/default.asp "
+            >HTML Tutorial</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/html/html_examples.asp"
+            >HTML Examples</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/html/html_quiz.asp"
+            >HTML Exams</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="col">
+      <p>CSS</p>
+      <ul>
+        <li>
+          <a href=" https://www.w3schools.com/css/default.asp"
+            >CSS Tutorial</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/css/css_examples.asp"
+            >CSS Examples</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/css/css_quiz.asp">CSS Exams</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col">
+      <p>JavaScript</p>
+      <ul>
+        <li>
+          <a href="https://www.w3schools.com/js/default.asp">JS Tutorial</a>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/js/js_exercises.asp"
+            >JS Examples</a
+          >
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/js/js_quiz.asp">JS Exams</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <p id="lastp">
+    Copyright ©2021 All rights reserved | This Website is made by group 2.
+  </p>
+</footer>
+
+    <script src="./js/register.js"></script>
+  </body>
+</html>

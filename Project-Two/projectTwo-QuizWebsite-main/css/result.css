@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+:root{
+    --theme-Color:green;
+}
+body{
+    background-color: rgb(234 238 240);
+}
+/*Navbar*/
+.navbar {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar .nav-list ul,
+.social-icons ul {
+  display: flex;
+}
+
+.nav-list ul li,
+.social-icons ul li {
+  margin: 0px 20px;
+  color: #55527c;
+  font-size: 20px;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  font-weight: 400;
+  color: #475edf;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+
+.social-icons ul i {
+  color: #475edf;
+  font-size: 1.3em;
+}
+
+.social-icons ul li:hover {
+  transform: scale(1.2);
+}
+
+.toggle-btn i {
+  font-size: 30px;
+  color: #55527c;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+.logo {
+  width: 11em;
+  height: 3.5em;
+  margin-top: 2px;
+}
+
+/*............Tharaa.................*/
+#scroll-up{
+  display: none;
+  position: fixed;
+  margin-left: 90%;
+  cursor: pointer;
+  z-index: 99;
+  color: 475edf;
+  font-size: 1.7rem;
+  margin-right: 3%;
+  bottom: 0;
+}
+
+.th_Result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    color: var(--theme-Color);
+    line-height: 1.5rem;
+}
+.th_Status{
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+.th_Result>i{
+    font-size: 4rem;
+}
+.th_Result>h2{
+    font-size: 1.5rem;
+}
+
+
+/* ....aya_code ........*/
+#A_resultContainer{
+    width: 65%;
+    height: auto;
+    padding: 2em;
+    margin: 4em auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  /* #table_container{
+    overflow:scroll;
+  } */
+  #show{
+  text-align: center;
+  margin: 1em auto;
+  }
+  tr:nth-child(odd) {
+  background-color: rgba(145, 147, 161, 0.349);
+  }
+  td,th {
+
+    border-bottom: rgb(152, 152, 219) solid 0.5px;
+    text-align: center;
+    padding: 1em;
+    vertical-align: middle;
+    /* word-wrap: break-word; */
+  }
+  .tableHead{
+      font-weight: bold;
+      vertical-align: middle;
+      /* display: flex; */
+      justify-content: space-around;
+      border-bottom: rgb(152, 152, 219) solid 0.5px;
+
+  }
+  .showTable{
+    width: 70%;
+    margin: 2% auto;
+    display: none;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  }
+  .showTable.display{
+      display: block;
+  }
+  
+  /* ......aya_end code...... */
+  li{
+    list-style: none;
+}
+li:hover{
+    font-size: 20px;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+
+}
+
+  /*     Footer     */
+  .footer {
+    background-color: #0b0b1d;
+    color: #fefefe;
+    font-size: 1.7em;
+    padding: 1.5em;
+    /* position:fixed; */
+    bottom: 0;
+  
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 1.1em;
+  }
+  .smicons {
+    margin: 1%;
+  }
+  .smicons:hover {
+    color: turquoise;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .col > ul {
+    line-height: 1.5;
+    margin: 0;
+  }
+  .col > ul > li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 15px;
+  }
+  .col > ul > li:hover {
+    list-style: none;
+    color: white;
+  }
+  
+  .col > ul > li > a {
+    color: #9fa8c3;
+  }
+  #lastp {
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    color: #9fa8c3;
+  }
+  
+  .footer_form,
+  .social_footer {
+    display: flex;
+  }
+  
+  .social_footer h2,
+  label[for="stayupdated"] {
+    margin-right: 0.7em;
+  }
+  
+  hr {
+    margin-top: 0;
+  }
+  .col > p {
+    margin-bottom: 0.3em;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
+  .social_footer ul > a {
+    color: #9fa8c3;
+    margin-right: 0.1em;
+  }
+  
+  .col ul li > a:hover,
+  .social_footer ul > a:hover {
+    color: #fefefe;
+  }
+  .navbar button{
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    width: max-content;
+    padding: 10px;
+    background-color: rgb(247, 142, 142);
+    border-radius: 20px;
+  }
+  .navbar button:hover{
+    background-color: rgb(243, 102, 102);
+    color: white;
+    transition-duration: 0.4s;
+  }
+
+/*..........Media-Query...............*/
+@media all and (max-width: 1024px) {
+  .toggle-btn i {
+    display: block;
+  }
+
+  .brand img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin-top: -0.7em;
+  }
+
+  .navbar {
+    background: #eaeef0;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    margin-top: 1.5em;
+    text-align: center;
+  }
+
+  .nav-list ul li {
+    margin-top: 30px;
+  }
+
+  .social-icons {
+    margin: 2em 0 0 0;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 5px;
+  }
+
+  .intro_section {
+    flex-direction: column;
+  }
+
+  .intro_section_container {
+    margin: 0 auto;
+    margin-bottom: 4em;
+  }
+
+  .intro_section img {
+    max-width: 100vw;
+  }
+
+  .intro_section_container h1 {
+    margin: 0.5em 0 0 0;
+  }
+
+  .login_form {
+    margin-left: 0;
+  }
+
+  .form_sections {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+  @media screen and (max-width: 850px) and (min-width:679px){
+      .showTable{
+        margin-left:5% ;
+       
+      }
+      
+  }
+  @media screen and (max-width: 680px) {
+    /* #A_resultContainer{
+      width:100%;
+      padding: 10px 0px;
+    } */
+    .th_Status{
+      font-size: 1.2rem;
+    }
+    .th_Result>i{
+      font-size: 3rem;
+    }
+    .showTable{
+      /* margin:2% auto; */
+      margin-left: 5%;
+
+      font-size: 0.8rem;
+    }
+   
+  }
+  @media screen and (max-width: 526px) {
+    .showTable{
+      margin-left: 0%;
+      margin-right: 5%;
+    }
+    .footer{
+      width: 100%;
+    }
+    .col {
+      margin: 0 0 1.3em 0;
+    }
+    .navbar{
+      width:100%;
+    }
+  }
+    /* @media screen and (min-width: 379px){
+      .footer{
+        width: 100%;
+      }
+      .navbar{
+        width: 100%;
+      }
+    } */
